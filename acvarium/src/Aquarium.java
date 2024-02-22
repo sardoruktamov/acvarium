@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -19,10 +20,11 @@ public class Aquarium {
     // akvariumdan baliqni o'chirish
     public synchronized void removeFish(Fish fish) {
         Random random = new Random();
-        // baliqning yashash muddati 1 dan 10 gacha oraliqda tekshirib ko'rilmoqda
-        if (fish.getLifespan() == random.nextInt(10)){
-            fishList.remove(fish);
-        }
+        // baliqning yashash muddati 1 dan 10 gacha sekunt o'tgandan keyin tekshirib ko'rilmoqda
+//        if (fish.getLifespan() == new Date().getTime()){
+//            fishList.remove(fish);
+//            System.out.println("--------------------------------");
+//        }
 
     }
 

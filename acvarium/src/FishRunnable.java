@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class FishRunnable implements Runnable{
 
     private Aquarium aquarium;
@@ -28,12 +30,14 @@ public class FishRunnable implements Runnable{
                     throw new RuntimeException(e);
                 }
             }
+            if (fish.getLifespan() == new Date().getTime()){
+                aquarium.removeFish(fish);
+                System.out.println("***** " + fish.getName() + " nomli baliq vafot etganligi sababli o`chirildi!");
+            }
 
-            aquarium.removeFish(fish);
-            System.out.println("***** " + fish.getName() + " nomli baliq vafot etganligi sababli o`chirildi!");
 
             try {
-                // Delay between interactions
+                
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
