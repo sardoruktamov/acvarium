@@ -6,18 +6,13 @@ public class Fish {
 
     Random random = new Random();
     private String name;
-    // private long lifespan = TimeUnit.SECONDS.toSeconds(random.nextInt(10) + 1);   // baliqning yashash muddati 1 dan 10 gacha qilib olindi
-    // baliqning yashash muddati xozirgi vaqtga  1 dan 10 gacha bo'lgan sekunt qo'shilganiga teng qilib olindi
+  // baliqning yashash muddati xozirgi vaqtga  1 dan 10 gacha bo'lgan sekunt qo'shilganiga teng qilib olindi
     private long lifespan = (new Date().getTime()) + TimeUnit.SECONDS.toSeconds(random.nextInt(10) + 1);
     private String gender;
 
     private int aquarium;
 
-    public Fish() {
-    }
-
     public Fish(String name, long lifespan, String gender) {
-
         this.name = name;
         this.lifespan = lifespan;
         this.gender = gender;
@@ -38,9 +33,7 @@ public class Fish {
 
     public void setLifespan(int lifespan) {
         this.lifespan = lifespan;
-
     }
-
     public void setGender(String gender) {
         this.gender = gender;
     }

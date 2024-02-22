@@ -14,24 +14,29 @@ public class Aquarium {
     // akvariumga baliq qo'shish
     public synchronized void addFish(Fish fish) {
         fishList.add(fish);
-        System.out.println(fish.getName() + " " +this.name+ " - akvariumga qo`shildi!");
+        System.out.println(fish.getName() +" "+ fish.getGender()+ " baliq  " +this.name+ " - akvariumga qo`shildi!");
     }
 
     // akvariumdan baliqni o'chirish
     public synchronized void removeFish(Fish fish) {
-        Random random = new Random();
         // baliqning yashash muddati 1 dan 10 gacha sekunt o'tgandan keyin tekshirib ko'rilmoqda
-//        if (fish.getLifespan() == new Date().getTime()){
-//            fishList.remove(fish);
-//            System.out.println("--------------------------------");
-//        }
+        if (fish.getLifespan() == new Date().getTime()){
+            fishList.remove(fish);
+            System.out.println("***** " + fish.getName() + " nomli baliq vafot etganligi sababli o`chirildi!");
+        }
 
     }
 
-    // baliqlar urug'lanish qismi
-    public void interactWithFish(Fish fish) {
-        // baliqlar bitta akvariumga solinganda urug'lanish jarayoni
-        System.out.println(name + "-kvariumda " +fish.getName()+ " "  );
+    // baliqlar bitta akvariumga solinganda urug'lanish jarayoni
+    public void interactWithFish() {
+        String arr[] = {"urg`ochi", "erkak"};
+        Random ran = new Random();
+        Fish fish = new Fish(
+                random.nextInt(10) + "-",
+                random.nextInt(10),
+                arr[ran.nextInt(arr.length)]);
+        System.out.println("*****YANGI "+ fish.getGender() +" BALIQ TUG`ILDI!!!");
+        addFish(fish);
     }
 
     public Aquarium() {
