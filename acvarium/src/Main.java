@@ -9,7 +9,7 @@ public class Main {
 
         Aquarium aquarium = new Aquarium();
 
-        // Akvariumga erkak va ur`ochi baliqlarni qo'shish va yaratish
+        // Akvariumga erkak va urg`ochi baliqlarni qo'shish va yaratish
         for (int i = 1; i < numFish; i++) {
             Fish fish = new Fish(i + "- ", random.nextInt(10), arr[random.nextInt(arr.length)]);
             aquarium.addFish(fish);
