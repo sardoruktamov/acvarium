@@ -20,15 +20,20 @@ public class FishRunnable implements Runnable{
             if (fish.getAquarium() == aquarium.getName()) {
                 try {
                     Thread.sleep(2000);
-                    System.out.println("Urug'lanish jarayoni kuzatilmoqda!!!");
 
 
                     System.out.println(aquarium.getName() + "-akvariumda "
-                                        +fish.getName()+fish.getGender()+ " va " +aquarium.getFish().getName()+
-                                        "lar uchrashdi");
-                    Thread.sleep(3000);
-                    aquarium.interactWithFish();
-                    Thread.sleep(3000);
+                            + fish.getName() + fish.getGender() + " va " + aquarium.getFish().getName() +
+                            "lar uchrashdi");
+                    if (fish.getGender() != aquarium.getFish().getGender()) {
+
+                        System.out.println("Urug'lanish jarayoni kuzatilmoqda!!!");
+                        Thread.sleep(3000);
+                        aquarium.interactWithFish();
+                        Thread.sleep(3000);
+                    }else {
+                        System.out.println("ikkita Erkak yoki ikkita Urg'ochi baliq uchrashdi \n Bu holatda urug'lanmaydi!!!");
+                    }
                     aquarium.removeFish(fish);
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
