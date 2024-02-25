@@ -6,4 +6,4 @@
 4. Akvariumdagi baliqlarning nomlari 1 dan 10 gacha bo'lgan raqamlar bilan nomlangan (misol uchun: 1-erkak baliq)
 
    
-   __Bog'lanish uchun: __ [murojjat](https://t.me/s_uktamov)
+   __Bog'lanish uchun:__  [murojaat](https://t.me/s_uktamov)
