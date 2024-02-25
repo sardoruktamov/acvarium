@@ -4,4 +4,6 @@
 2. Baliqning yashash muddati xozirgi kompyuter vaqtiga random yordamida 1 dan 10 gacha bo'lgan sekunt qo'shilganiga teng qilib olindi
 3. Baliqning yashash muddati 1 dan 10 gacha sekunt muddat o'tgandan keyin tekshirib ko'rilganda kompyuter vaqtiga to'g'ri kelib qolsa akvariumdan o'chiriladi.
 4. Akvariumdagi baliqlarning nomlari 1 dan 10 gacha bo'lgan raqamlar bilan nomlangan (misol uchun: 1-erkak baliq)
-   _Bog'lanish uchun: _ [murojjat](https://t.me/s_uktamov)
+
+   
+   __Bog'lanish uchun: __ [murojjat](https://t.me/s_uktamov)
